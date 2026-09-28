@@ -1,0 +1,1 @@
+{"name":"treat-credit","version":"1.0.0","private":true,"scripts":{"start":"node server.js","test":"node tests/responsive.cjs"},"devDependencies":{"playwright":"^1.58.0"}}
