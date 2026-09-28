@@ -55,4 +55,15 @@
 .review-action{text-align:center}.review-action .button{gap:14px}
 @media(max-width:900px){.review-cards{grid-auto-columns:calc((100% - 24px)/2)}}
 @media(max-width:600px){.reviews h2{font-size:43px}.review-cards{grid-auto-columns:88%;gap:16px;margin-top:30px}.review-card{padding:24px}.review-card blockquote{font-size:16px}}
+/* Google Fonts provides this family at 400; allow synthesized bold for clearer lettering. */
+.note h2,.item-heading h3,.compact-title h1{font-family:"Covered By Your Grace","Trebuchet MS",sans-serif;font-weight:700;font-synthesis:weight;letter-spacing:.2px}
+.note h2{font-size:34px;line-height:1.2}
+.item-heading{gap:7px;align-items:flex-end}
+.item-heading h3{font-size:22px;line-height:1.25;min-width:0;flex:0 1 auto}
+.price-leader{flex:1 0 18px;border-bottom:2px dotted currentColor;margin-bottom:6px;opacity:.65}
+.item-heading .price{flex:none;line-height:1.5;font-variant-numeric:tabular-nums}
+.compact-title h1{font-size:36px;line-height:1.3}
+.nav-wrap nav a{font-size:18px}
+@media(max-width:600px){.nav-wrap nav a{font-size:15px}.nav-wrap nav{gap:14px}.compact-title h1{font-size:29px}.note h2{font-size:31px}.item-heading h3{font-size:21px}}
+@media(max-width:360px){.nav-wrap{gap:10px}.nav-wrap nav{gap:10px}.nav-wrap nav a{font-size:14px}.menu-main .compact-title h1{font-size:24px}.menu-main .note h2{font-size:28px}.item-heading h3{font-size:20px}.price-leader{flex-basis:14px}.item-heading{gap:5px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}

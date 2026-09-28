@@ -10,7 +10,7 @@ if(page==='menu'){
     active=(index+MENU.length)%MENU.length;
     const sheet=MENU[active];
     document.querySelector('#sheet-label').textContent=`MENU ${active+1} OF ${MENU.length}`;
-    document.querySelector('#menu-content').innerHTML=sheet.sections.map(section=>`<section class="note"><h2>${section.title}</h2>${section.note?`<p class="note-description">${section.note}</p>`:''}${section.items.map(([name,price,description])=>`<article class="menu-item"><div class="item-heading"><h3>${name}</h3>${price?`<span class="price">${price}</span>`:''}</div>${description?`<p>${description}</p>`:''}</article>`).join('')}</section>`).join('');
+    document.querySelector('#menu-content').innerHTML=sheet.sections.map(section=>`<section class="note"><h2>${section.title}</h2>${section.note?`<p class="note-description">${section.note}</p>`:''}${section.items.map(([name,price,description])=>`<article class="menu-item"><div class="item-heading"><h3>${name}</h3>${price?`<span class="price-leader" aria-hidden="true"></span><span class="price">${price}</span>`:''}</div>${description?`<p>${description}</p>`:''}</article>`).join('')}</section>`).join('');
     history.replaceState(null,'',`#menu-${active+1}`);
     if(scroll)document.querySelector('.sheet-controls').scrollIntoView({block:'start'});
   }
