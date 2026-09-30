@@ -47,7 +47,7 @@ if(page==='home'){
       photo.src=src;
       photo.alt=name;
       caption.textContent=name;
-    },3000);
+    },1950);
   }
   document.addEventListener('visibilitychange',start);
   Promise.allSettled(treats.map(([,src])=>{
