@@ -67,3 +67,7 @@
 @media(max-width:600px){.nav-wrap nav a{font-size:15px}.nav-wrap nav{gap:14px}.compact-title h1{font-size:29px}.note h2{font-size:31px}.item-heading h3{font-size:21px}}
 @media(max-width:360px){.nav-wrap{gap:10px}.nav-wrap nav{gap:10px}.nav-wrap nav a{font-size:14px}.menu-main .compact-title h1{font-size:24px}.menu-main .note h2{font-size:28px}.item-heading h3{font-size:20px}.price-leader{flex-basis:14px}.item-heading{gap:5px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+/* One category per menu page, with centered text-only calls to action. */
+#menu-content{grid-template-columns:minmax(0,1fr);max-width:650px}
+.ribbon{justify-content:center;text-align:center}

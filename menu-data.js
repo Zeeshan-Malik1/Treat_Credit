@@ -2,7 +2,7 @@
 const served='Served with soft serve ice cream and whipped cream.';
 const flavours=['Milk Chocolate & Strawberry','White Chocolate & Strawberry','Kinder Bueno','Magic Stars','Maltesers','Rolo','Oreo','Biscoff','Pistachio','Ferrero Rocher','Kanafa','Kanafa & Strawberry'];
 function trays(kind){
- const base=kind==='cookie'?'Warm milk and white chocolate cookie':kind==='brownie'?'Two warm, gooey brownies':'A warm Belgian waffle or crepe';
+ const base=kind==='cookie'?'Warm milk and white chocolate cookie':kind==='brownie'?'Two warm, gooey brownies':kind==='waffle'?'A warm Belgian waffle':'A warm crepe';
  const toppings=[
  'drizzled with milk chocolate sauce, topped with fresh strawberries.',
  'drizzled with white chocolate sauce, topped with fresh strawberries.',
@@ -19,7 +19,7 @@ function trays(kind){
  ];
  return flavours.map((name,i)=>[name,i===11?'6.50':i===10?'6.00':i===9?(kind==='brownie'?'': '6.00'):'5.50',`${base}, ${toppings[i]} ${served}`]);
 }
-const MENU=[
+const menuGroups=[
  {label:'Cookies & sundaes',sections:[
   {title:'Warm Cookie Trays',items:trays('cookie')},
   {title:'Sundaes',items:[
@@ -94,5 +94,9 @@ const MENU=[
   {title:'Soft Drinks',note:'£1.50',items:['Coke Zero','Coke Zero Cherry','Fanta Orange','Fanta Lemon','Rubicon Passionfruit','Rubicon Mango','Bottled Water'].map(name=>[name,'',''])},
   {title:'Red Bull',note:'£1.75',items:['Original Red Bull','Cherry Sakura','Vanilla Berry','White Peach','Forest Fruits','Tropical Fruits'].map(name=>[name,'',''])}
  ]},
- {label:'Brownies & waffles',sections:[{title:'Brownie Trays',items:trays('brownie')},{title:'Waffles/Crepes',items:trays('waffle')}]}
+ {label:'Brownies & waffles',sections:[{title:'Brownie Trays',items:trays('brownie')},{title:'Waffles',items:trays('waffle')},{title:'Crepes',items:trays('crepe')}]}
 ];
+
+const categoryOrder = ['Brownie Trays', 'Warm Cookie Trays', 'Waffles', 'Crepes', 'Strawberry Pots', 'Sundaes', 'Brownie Bites', 'Canned Matilda Cakes', 'Glitter Mocktails', 'Matcha (Iced/Hot)', 'Latte (Iced/Hot)', 'Hot Chocolate', 'Milkshakes', 'Soft Drinks', 'Red Bull'];
+const menuSections = menuGroups.flatMap(group => group.sections);
+const MENU = categoryOrder.map(title => ({label: title, sections: [menuSections.find(section => section.title === title)]}));

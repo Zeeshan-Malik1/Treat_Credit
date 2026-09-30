@@ -25,17 +25,17 @@ async function check(browser,label){
     assert.equal(await page.locator('.menu-tab').count(),0);
     const firstItem=await page.locator('.menu-item').first().boundingBox();
     assert(firstItem.y+firstItem.height<=height,`First menu item below fold at ${width}: ${JSON.stringify(firstItem)}`);
-    for(let sheet=0;sheet<5;sheet++){
+    for(let sheet=0;sheet<15;sheet++){
      assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),`Menu ${sheet+1} overflow ${width}`);
      assert(await page.locator('.menu-item').count()>0);
      assert.equal(await page.locator('#original-menu').count(),0);
-     assert.equal(await page.locator('#sheet-label').textContent(),`MENU ${sheet+1} OF 5`);
-     if(sheet<4)await page.locator('#next').click();
+     assert.equal(await page.locator('#sheet-label').textContent(),`MENU ${sheet+1} OF 15`);
+     if(sheet<14)await page.locator('#next').click();
     }
     await page.locator('#next').click();
-    assert.equal(await page.locator('#sheet-label').textContent(),'MENU 1 OF 5');
+    assert.equal(await page.locator('#sheet-label').textContent(),'MENU 1 OF 15');
     await page.locator('#prev').click();
-    assert.equal(await page.locator('#sheet-label').textContent(),'MENU 5 OF 5');
+    assert.equal(await page.locator('#sheet-label').textContent(),'MENU 15 OF 15');
    }
    const broken=await page.locator('img').evaluateAll(imgs=>imgs.filter(i=>i.complete&&i.naturalWidth===0).map(i=>i.src));
    assert.deepEqual(broken,[]);
