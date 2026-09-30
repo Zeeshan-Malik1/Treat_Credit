@@ -24,3 +24,35 @@ if(page==='menu'){
   window.addEventListener('hashchange',renderFromHash);
   renderFromHash();
 }
+
+if(page==='home'){
+  const treats=[
+    ['Ferrero Rocher cookie tray','images/Ferrero Rocher cookie tray.png'],
+    ['Kanafa & strawberry brownie tray','images/Kanafa & strawberry brownie tray.png'],
+    ['Kanafa milkshake','images/Kanafa milkshake.png'],
+    ['Kanafa strawberry pot','images/Kanafa strawberry pot.png'],
+    ['Canned Kinder Matilda cake','images/Canned kinder Matilda cake.png']
+  ];
+  const photo=document.querySelector('#best-treat-image');
+  const caption=document.querySelector('#best-treat-name');
+  let active=0;
+  let timer;
+  let ready=false;
+  function start(){
+    clearInterval(timer);
+    if(!ready||document.hidden)return;
+    timer=setInterval(()=>{
+      active=(active+1)%treats.length;
+      const [name,src]=treats[active];
+      photo.src=src;
+      photo.alt=name;
+      caption.textContent=name;
+    },3000);
+  }
+  document.addEventListener('visibilitychange',start);
+  Promise.allSettled(treats.map(([,src])=>{
+    const preload=new Image();
+    preload.src=src;
+    return preload.decode();
+  })).then(()=>{ready=true;start();});
+}
