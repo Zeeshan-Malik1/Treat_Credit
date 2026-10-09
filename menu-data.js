@@ -50,7 +50,7 @@ const menuGroups=[
    ['Classic Matilda Cake','£5.50','Warm chocolate fudge cake, layered with chocolate ganache, sealed in a can.'],
    ['Kinder Matilda Cake','£6','Warm chocolate fudge cake, layered with chocolate ganache and kinder sauce, sealed in a can.'],
    ['Kanafa Matilda Cake','£6.50','Warm chocolate fudge cake, layered with chocolate ganache and pistachio kanafa sealed in a can.']]},
-  {title:'Glitter Mocktails',note:'£5.50 · Upgrade to a Red Bull Mocktail for £1',items:['Blue Raspberry','Strawberry','Cherry','Mojito','Mango','Passionfruit','Peach'].map(name=>[name,'',''])}
+  {title:'Glitter Mocktails',note:'£5.50',upgrade:'Upgrade to a Red Bull Mocktail for £1',items:['Blue Raspberry','Strawberry','Cherry','Mojito','Mango','Passionfruit','Peach'].map(name=>[name,'',''])}
  ]},
  {label:'Matcha & coffee',sections:[
   {title:'Matcha (Iced/Hot)',note:'Iced matcha & iced lattes are canned. Upgrade to oat milk for 50p',items:[

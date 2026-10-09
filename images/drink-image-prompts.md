@@ -1,0 +1,39 @@
+# Drink image edits
+
+Created with built-in imagegen using the supplied photos and logo.
+
+## Passion Fruit Red Bull Glitter Mocktail
+
+Saved asset: images/passion-fruit-mocktail.png
+
+Prompt: Use case: compositing. Asset: one individual product photo cutout for Treat Credit website slideshow. Input references: user screenshots show drinks in a four-photo collage, a separate matcha photo, and the final closeup is the exact desired logo reference. Create ONLY Passion Fruit Red Bull Glitter Mocktail: the golden yellow iced drink in the bottom-right of the four-drink collage; tall slim clear can with silver rim, ice and golden passionfruit liquid. Match the corresponding reference drink's actual appearance and packaging, held from below by a black-gloved hand as photographed. Remove screenshot UI, text messages, collage, environment and white background; genuinely transparent PNG alpha background. Entire drink and gloved hand in frame, centered, square composition, modest margin, product fills 85 percent height. Replace the existing drink label with the SAME logo shown in the user's LAST image: round pale blush/cream circle, thin dark brown circular outline, bold chunky stacked dark brown 'Treat' then 'Credit', and small dark brown 'DESSERT DRIVE' then 'THROUGH' underneath with tiny dot accents. Match this reference logo precisely, not an alternative brand or redesigned lettering. Preserve drink color, shape and ingredients. Only one drink, no other products, no additional typography, no decorative backdrop.
+
+## Cherry Red Bull Glitter Mocktail
+
+Saved asset: images/cherry-mocktail.png
+
+Prompt: Use case: compositing. Asset: one individual product photo cutout for Treat Credit website slideshow. Input references: user screenshots show drinks in a four-photo collage, a separate matcha photo, and the final closeup is the exact desired logo reference. Create ONLY Cherry Red Bull Glitter Mocktail: the red iced drink at the top-right of the four-drink collage; tall slim clear can with silver rim, ice and deep cherry-red glitter liquid. Match the corresponding reference drink's actual appearance and packaging, held from below by a black-gloved hand as photographed. Remove screenshot UI, text messages, collage, environment and white background; genuinely transparent PNG alpha background. Entire drink and gloved hand in frame, centered, square composition, modest margin, product fills 85 percent height. Replace the existing drink label with the SAME logo shown in the user's LAST image: round pale blush/cream circle, thin dark brown circular outline, bold chunky stacked dark brown 'Treat' then 'Credit', and small dark brown 'DESSERT DRIVE' then 'THROUGH' underneath with tiny dot accents. Match this reference logo precisely, not an alternative brand or redesigned lettering. Preserve drink color, shape and ingredients. Only one drink, no other products, no additional typography, no decorative backdrop.
+
+## Kinder Bueno Iced Latte
+
+Saved asset: images/kinder-bueno-latte.png
+
+Prompt: Use case: compositing. Asset: one individual product photo cutout for Treat Credit website slideshow. Input references: user screenshots show drinks in a four-photo collage, a separate matcha photo, and the final closeup is the exact desired logo reference. Create ONLY Kinder Bueno Iced Latte: the layered beige iced latte at top-left of the four-drink collage; tall slim clear can with silver rim, creamy milk lower layer, coffee upper layer and ice. Match the corresponding reference drink's actual appearance and packaging, held from below by a black-gloved hand as photographed. Remove screenshot UI, text messages, collage, environment and white background; genuinely transparent PNG alpha background. Entire drink and gloved hand in frame, centered, square composition, modest margin, product fills 85 percent height. Replace the existing drink label with the SAME logo shown in the user's LAST image: round pale blush/cream circle, thin dark brown circular outline, bold chunky stacked dark brown 'Treat' then 'Credit', and small dark brown 'DESSERT DRIVE' then 'THROUGH' underneath with tiny dot accents. Match this reference logo precisely, not an alternative brand or redesigned lettering. Preserve drink color, shape and ingredients. Only one drink, no other products, no additional typography, no decorative backdrop.
+
+## Vanilla Iced Matcha
+
+Saved asset: images/vanilla-matcha.png
+
+Prompt: Use case: compositing. Asset: one individual product photo cutout for Treat Credit website slideshow. Input references: user screenshots show drinks in a four-photo collage, a separate matcha photo, and the final closeup is the exact desired logo reference. Create ONLY Vanilla Iced Matcha: the green and white layered drink in the separate matcha screenshot; tall slim clear can with silver rim, milk lower layer and matcha green top with ice. Match the corresponding reference drink's actual appearance and packaging, held from below by a black-gloved hand as photographed. Remove screenshot UI, text messages, collage, environment and white background; genuinely transparent PNG alpha background. Entire drink and gloved hand in frame, centered, square composition, modest margin, product fills 85 percent height. Replace the existing drink label with the SAME logo shown in the user's LAST image: round pale blush/cream circle, thin dark brown circular outline, bold chunky stacked dark brown 'Treat' then 'Credit', and small dark brown 'DESSERT DRIVE' then 'THROUGH' underneath with tiny dot accents. Match this reference logo precisely, not an alternative brand or redesigned lettering. Preserve drink color, shape and ingredients. Only one drink, no other products, no additional typography, no decorative backdrop.
+
+## Ferrero Rocher Milkshake
+
+Saved asset: images/ferrero-rocher-milkshake.png
+
+Prompt: Use case: compositing. Asset: one individual product photo cutout for Treat Credit website slideshow. Input references: user screenshots show drinks in a four-photo collage, a separate matcha photo, and the final closeup is the exact desired logo reference. Create ONLY Ferrero Rocher Milkshake: the milkshake at bottom-left of the four-drink collage; clear takeaway domed-lid cup of creamy chocolate milkshake with whipped cream and chocolate drizzle. Match the corresponding reference drink's actual appearance and packaging, held from below by a black-gloved hand as photographed. Remove screenshot UI, text messages, collage, environment and white background; genuinely transparent PNG alpha background. Entire drink and gloved hand in frame, centered, square composition, modest margin, product fills 85 percent height. Replace the existing drink label with the SAME logo shown in the user's LAST image: round pale blush/cream circle, thin dark brown circular outline, bold chunky stacked dark brown 'Treat' then 'Credit', and small dark brown 'DESSERT DRIVE' then 'THROUGH' underneath with tiny dot accents. Match this reference logo precisely, not an alternative brand or redesigned lettering. Preserve drink color, shape and ingredients. Only one drink, no other products, no additional typography, no decorative backdrop.
+
+## Kanafa milkshake
+
+Saved asset: images/kanafa-milkshake-new-logo.png
+
+Prompt: Use case: compositing. Image 1 is the edit target, existing Kanafa milkshake photo. Image 2 is the exact brand logo to use. Replace ONLY the old circular printed logo on the front of the milkshake cup with the logo from image 2, keeping its stacked Treat Credit lettering and DESSERT DRIVE THROUGH tagline, pink circular background, brown border, accurate proportions. Fit the logo naturally to the cup's front in the same position and size as the old one. Preserve everything else: exact milkshake, domed lid, pistachio cream and drizzle, lighting, composition, background, framing. Do not retain the old LUXURIOUS DESSERTS & BEVERAGES tagline or registered mark. Output single edited photo.

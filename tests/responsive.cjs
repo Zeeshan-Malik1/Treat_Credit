@@ -10,6 +10,7 @@ async function check(browser,label){
   await page.setViewportSize({width,height});
   for(const route of ['index.html','menu.html','contact.html','order.html']){
    await page.goto(`http://localhost:3000/${route}`);
+   if(await page.locator('.queue-welcome[open]').count()) await page.getByRole('button',{name:'Got it, sweet!'}).click();
    await page.evaluate(()=>document.fonts.ready);
    assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),`${label} ${route} overflow at ${width}`);
    assert.equal(await page.locator('nav[aria-label="Main navigation"] [aria-current="page"]').count(),1);

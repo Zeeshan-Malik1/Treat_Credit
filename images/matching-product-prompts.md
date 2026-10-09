@@ -1,0 +1,21 @@
+# Matching product images
+
+Mode: built-in imagegen. Reference: images/cherry-mocktail.png.
+
+## Kanafa milkshake
+
+Saved asset: images/kanafa-milkshake-matching.png
+
+Prompt: Use case: compositing. Create one updated Kanafa milkshake product image for the existing website slideshow. Image 1 is the edit target product. Image 2 is the approved cherry mocktail and is the EXACT styling reference for both the logo and gloved hand. Preserve the product from image 1: its contents, ingredients, colors, cup/can shape and lid. Replace the old label completely with the same pale PINK circular logo visible on image 2, with thin dark brown outline, chunky stacked 'Treat' and 'Credit', and exact small tagline 'DESSERT DRIVE' then 'THROUGH' with dot accents. Match its pink color, typography, label proportions and appearance; no alternate slogan, TM or registered marks. Add the SAME style black nitrile-gloved hand as image 2 holding this product naturally from below and behind: wrist entering bottom-right, fingers curling around lower-left side, thumb at right, logo unobstructed. Match reference hand pose, glove material, studio lighting, framing, and overall scale. Entire product visible, centered in square image, 85-90 percent image height with modest margin. Remove old blurry background and output genuine transparent PNG alpha, no rendered checkerboard, no other drinks or extra objects. Product remains Kanafa milkshake, not cherry mocktail.
+
+## Kanafa strawberry pot
+
+Saved asset: images/kanafa-strawberry-pot-matching.png
+
+Prompt: Use case: compositing. Create one updated Kanafa strawberry pot product image for the existing website slideshow. Image 1 is the edit target product. Image 2 is the approved cherry mocktail and is the EXACT styling reference for both the logo and gloved hand. Preserve the product from image 1: its contents, ingredients, colors, cup/can shape and lid. Replace the old label completely with the same pale PINK circular logo visible on image 2, with thin dark brown outline, chunky stacked 'Treat' and 'Credit', and exact small tagline 'DESSERT DRIVE' then 'THROUGH' with dot accents. Match its pink color, typography, label proportions and appearance; no alternate slogan, TM or registered marks. Add the SAME style black nitrile-gloved hand as image 2 holding this product naturally from below and behind: wrist entering bottom-right, fingers curling around lower-left side, thumb at right, logo unobstructed. Match reference hand pose, glove material, studio lighting, framing, and overall scale. Entire product visible, centered in square image, 85-90 percent image height with modest margin. Remove old blurry background and output genuine transparent PNG alpha, no rendered checkerboard, no other drinks or extra objects. Product remains Kanafa strawberry pot, not cherry mocktail.
+
+## Canned Kinder Matilda cake
+
+Saved asset: images/kinder-matilda-matching.png
+
+Prompt: Use case: compositing. Create one updated Canned Kinder Matilda cake product image for the existing website slideshow. Image 1 is the edit target product. Image 2 is the approved cherry mocktail and is the EXACT styling reference for both the logo and gloved hand. Preserve the product from image 1: its contents, ingredients, colors, cup/can shape and lid. Replace the old label completely with the same pale PINK circular logo visible on image 2, with thin dark brown outline, chunky stacked 'Treat' and 'Credit', and exact small tagline 'DESSERT DRIVE' then 'THROUGH' with dot accents. Match its pink color, typography, label proportions and appearance; no alternate slogan, TM or registered marks. Add the SAME style black nitrile-gloved hand as image 2 holding this product naturally from below and behind: wrist entering bottom-right, fingers curling around lower-left side, thumb at right, logo unobstructed. Match reference hand pose, glove material, studio lighting, framing, and overall scale. Entire product visible, centered in square image, 85-90 percent image height with modest margin. Remove old blurry background and output genuine transparent PNG alpha, no rendered checkerboard, no other drinks or extra objects. Product remains Canned Kinder Matilda cake, not cherry mocktail.
