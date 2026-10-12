@@ -104,3 +104,42 @@
 @media(max-width:600px){.steps img.cutlery-icon{padding:11px}.order-blob .steps img.cutlery-icon{padding:9px}}
 .hero{min-height:0;padding-bottom:35px}
 @media(max-width:600px){.hero{min-height:0;padding-bottom:25px}}
+
+/* Fit the welcome card to shorter viewports by tightening its content. */
+@media(max-height:760px){
+ .queue-welcome{padding:20px 26px;border-radius:70px 70px 22px 22px}
+ .queue-art{margin:28px auto 8px;font-size:28px}
+ .queue-art img{width:90px;height:55px}
+ .queue-sticker{top:18px;left:16px;padding:9px;font-size:10px}
+ .queue-close{top:16px;right:16px}
+ .queue-welcome h2{font-size:40px;margin:10px 0 14px}
+ .queue-welcome p{font-size:14px;line-height:1.5;margin-bottom:14px}
+ .queue-welcome .queue-cash-note{padding:9px 12px;margin-bottom:14px}
+ .queue-welcome .button{padding:14px 20px}
+ .queue-dismiss{margin-top:12px}
+ .queue-signoff{margin-top:14px;font-size:12px}
+}
+@media(max-height:600px){
+ .queue-welcome{padding:16px 20px;border-radius:55px 55px 20px 20px}
+ .queue-art{margin:24px auto 6px}
+ .queue-art img{height:40px;width:70px}
+ .queue-welcome h2{font-size:34px;margin:8px 0 10px}
+ .queue-welcome p{font-size:13px;line-height:1.45;margin-bottom:10px}
+ .queue-welcome .queue-cash-note{font-size:12px;padding:8px 10px;margin-bottom:10px}
+ .queue-dismiss{margin-top:8px;padding-bottom:5px}
+ .queue-signoff{font-size:11px;margin-top:10px}
+}
+@media(max-height:520px){
+ .queue-welcome{width:min(600px,calc(100% - 24px));padding:12px 22px;border-radius:28px;max-height:calc(100svh - 16px)}
+ .queue-art,.queue-welcome>.eyebrow{display:none}
+ .queue-sticker{position:static;display:inline-block;transform:none;padding:3px 12px;font-size:10px;line-height:1.2}
+ .queue-close{top:10px;right:10px}
+ .queue-welcome h2{font-size:28px;margin:6px 0}
+ .queue-welcome h2 br{display:none}
+ .queue-welcome h2 br::after{content:' '}
+ .queue-welcome p{margin-bottom:8px}
+ .queue-welcome .queue-cash-note{padding:6px 10px;margin-bottom:8px}
+ .queue-cash-note strong{display:inline;margin-right:6px}
+ .queue-welcome .button{padding:10px 20px}
+ .queue-signoff{margin-top:6px;transform:none}
+}
