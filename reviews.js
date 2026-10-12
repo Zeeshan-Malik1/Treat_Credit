@@ -14,6 +14,35 @@ if (reviewTrack) {
   let visible = false;
   let timer;
 
+  const fullReview = document.createElement('dialog');
+  fullReview.className = 'full-review';
+  fullReview.setAttribute('aria-labelledby', 'full-review-author');
+  fullReview.innerHTML = '<button type="button" class="full-review-close" aria-label="Close full review">&times;</button><span class="eyebrow">GOOGLE REVIEW</span><h2 id="full-review-author"></h2><p class="full-review-text"></p>';
+  document.body.append(fullReview);
+  fullReview.querySelector('button').addEventListener('click', () => fullReview.close());
+  section.classList.add('reviews-enhanced');
+  const expandable = [...reviewTrack.children].map(card => {
+    const quote = card.querySelector('blockquote');
+    const author = card.querySelector('figcaption strong').textContent;
+    const text = quote.innerText;
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'review-read-more';
+    button.textContent = 'Read full review';
+    button.setAttribute('aria-label', `Read full review by ${author}`);
+    button.addEventListener('click', () => {
+      pause();
+      fullReview.querySelector('h2').textContent = author;
+      fullReview.querySelector('p').textContent = text;
+      fullReview.showModal();
+    });
+    quote.after(button);
+    return {quote, button};
+  });
+  new ResizeObserver(() => {
+    expandable.forEach(({quote, button}) => { button.hidden = quote.scrollHeight <= quote.clientHeight + 1; });
+  }).observe(reviewTrack);
+
   function move(direction) {
     const cards = reviewTrack.children;
     const step = cards[1].offsetLeft - cards[0].offsetLeft;
@@ -28,7 +57,7 @@ if (reviewTrack) {
     clearInterval(timer);
     toggle.textContent = paused ? 'Play reviews' : 'Pause reviews';
     if (!paused && !hovered && visible && !document.hidden) {
-      timer = setInterval(() => move(1), 6500);
+      timer = setInterval(() => move(1), 3000);
     }
   }
   function pause() { paused = true; sync(); }

@@ -58,6 +58,19 @@
 .review-toggle:hover{background:var(--green);color:var(--cream)}
 .review-controls+.review-cards{margin-top:20px}
 .review-card figcaption strong{overflow-wrap:anywhere}
+.review-cards{scrollbar-width:none}
+.review-cards::-webkit-scrollbar{display:none}
+.reviews-enhanced .review-card{height:320px;padding:24px}
+.reviews-enhanced .review-quote-mark{font-size:44px;line-height:.8}
+.reviews-enhanced .review-card blockquote{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:5;overflow:hidden;flex:none;font-size:16px;line-height:1.55;margin:10px 0 8px}
+.reviews-enhanced .review-card figcaption{margin-top:auto;padding-top:12px}
+.review-read-more{align-self:flex-start;border:0;border-bottom:1px solid currentColor;background:transparent;padding:2px 0;font-size:12px;font-weight:700}
+.review-read-more[hidden]{display:none}
+.full-review{width:min(560px,calc(100% - 32px));max-height:calc(100svh - 32px);padding:36px 28px;border:1px solid var(--brown);border-radius:24px;background:var(--cream);color:var(--brown)}
+.full-review::backdrop{background:#203e3080;backdrop-filter:blur(4px)}
+.full-review h2{font-size:30px;letter-spacing:-.5px;margin:16px 0;overflow-wrap:anywhere}
+.full-review-text{font-size:16px;line-height:1.7;white-space:pre-line;margin-bottom:0}
+.full-review-close{position:absolute;top:10px;right:10px;width:44px;height:44px;border:1px solid var(--line);border-radius:50%;background:var(--pink);font-size:26px}
 @media(max-width:900px){.review-cards{grid-auto-columns:calc((100% - 24px)/2)}}
 @media(max-width:600px){.reviews h2{font-size:43px}.review-cards{grid-auto-columns:88%;gap:16px;margin-top:30px}.review-card{padding:24px}.review-card blockquote{font-size:16px}}
 /* Google Fonts provides this family at 400; allow synthesized bold for clearer lettering. */
