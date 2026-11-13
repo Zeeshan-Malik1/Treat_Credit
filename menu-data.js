@@ -32,9 +32,9 @@ const menuGroups=[
    ['Ferrero Rocher','5.50','Soft serve ice cream, layered with milk chocolate sauce and crushed ferrero rochers.'],
    ['Kanafa','5.50','Soft serve ice cream, layered with pistachio sauce and kanafa.']]},
   {title:'Strawberry Pots',items:[
-   ['Milk Chocolate','5.50','A cup of fresh strawberries smothered in milk chocolate.'],
-   ['White Chocolate','5.50','A cup of fresh strawberries smothered in white chocolate.'],
-   ['Kanafa','6.50','A cup of fresh strawberries smothered in milk chocolate with layers of pistachio kanafa.']]}
+   ['Milk Chocolate','6.50','A cup of fresh strawberries smothered in milk chocolate.'],
+   ['White Chocolate','6.50','A cup of fresh strawberries smothered in white chocolate.'],
+   ['Kanafa','7.50','A cup of fresh strawberries smothered in milk chocolate with layers of pistachio kanafa.']]}
  ]},
  {label:'Bites & cakes',sections:[
   {title:'Brownie Bites',items:[
